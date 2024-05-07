@@ -24,10 +24,15 @@ function App() {
 				</ul>
 			</Menu>
 			<Box>
-				<StyledBtn>Hello</StyledBtn>
-				<StyledBtn as={"a"}>Link</StyledBtn>
+				<StyledBtn btnType={"primary"} active>
+					Hello
+				</StyledBtn>
+				<StyledBtn btnType={"outlined"} color="#043185">
+					Hello
+				</StyledBtn>
+				{/* <StyledBtn as={"a"}>Link</StyledBtn>
 				<StyledLink as={"a"}>Link</StyledLink>
-				<SuperButton>SuperButton</SuperButton>
+				<SuperButton>SuperButton</SuperButton> */}
 			</Box>
 
 			{/* <PageTitle title={"This is App component"} />

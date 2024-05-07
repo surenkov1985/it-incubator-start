@@ -5,6 +5,7 @@ import { Rating } from "./components/Rating/Rating";
 import { StyledBtn, SuperButton } from "./styledComponents/Buttons.styled";
 import { StyledLink } from "./styledComponents/Link.styled";
 import { Menu } from "./styledComponents/Menu.styled";
+import { myTheme } from "./styles/animations/Theme.styled";
 
 function App() {
 	console.log("App rendering");
@@ -24,10 +25,10 @@ function App() {
 				</ul>
 			</Menu>
 			<Box>
-				<StyledBtn btnType={"primary"} active>
+				<StyledBtn btnType={"primary"} active color={myTheme.colors.primary}>
 					Hello
 				</StyledBtn>
-				<StyledBtn btnType={"outlined"} color="#043185">
+				<StyledBtn btnType={"outlined"} color={myTheme.colors.secondary}>
 					Hello
 				</StyledBtn>
 				{/* <StyledBtn as={"a"}>Link</StyledBtn>
@@ -72,7 +73,7 @@ const Box = styled.div`
 		cursor: zoom-in;
 	}
 
-	@media screen and (max-width: 800px) {
+	@media ${myTheme.media.tablet} {
 		flex-direction: column;
 	}
 `;
